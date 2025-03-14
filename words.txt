@@ -1,0 +1,1 @@
+Hund,Katze,Maus,Spiegelei,Tür,Auto,Regen,Haus,Fledermaus
