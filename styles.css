@@ -1,5 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { display: flex; height: 100vh; background-color: aquamarine;}
+        body { display: flex; height: 100vh; }
         
         .sidebar { width: 200px; background: #333; color: white; padding: 20px; }
         .sidebar a { display: block; color: white; text-decoration: none; padding: 10px; margin: 5px 0; }
@@ -7,3 +7,8 @@
         
         .content { flex-grow: 1; padding: 20px; }
         .header { background: #0078D7; color: white; padding: 15px; text-align: center; font-size: 1.5em; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background: #0078D7; color: white; }
+        input { width: 100%; border: none; text-align: center; }
