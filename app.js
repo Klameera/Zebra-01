@@ -1,7 +1,7 @@
-function showPage(page) {
+        function showPage(page) {
             let content = {
                 'home': '<h2>Home</h2><p>Lorem ipsum dolor sit amet...</p>',
-                 'seite1': `<h2>Stundenplan</h2>
+                'seite1': `<h2>Stundenplan</h2>
                     <table>
                         <tr>
                             <th>Tag</th>
