@@ -45,7 +45,29 @@ function showPage(page) {
                             <td><input type="text" id="fr3"></td>
                             <td><input type="text" id="fr4"></td>
                         </tr>
-                    </table>,
+                    </table>
+                    <button onclick="saveSchedule()">Speichern</button>
+                    <script>
+                        function saveSchedule() {
+                            let schedule = {};
+                            document.querySelectorAll('input').forEach(input => {
+                                schedule[input.id] = input.value;
+                            });
+                            localStorage.setItem('schedule', JSON.stringify(schedule));
+                        }
+
+                        function loadSchedule() {
+                            let savedSchedule = JSON.parse(localStorage.getItem('schedule'));
+                            if (savedSchedule) {
+                                document.querySelectorAll('input').forEach(input => {
+                                    if (savedSchedule[input.id]) {
+                                        input.value = savedSchedule[input.id];
+                                    }
+                                });
+                            }
+                        }
+                        setTimeout(loadSchedule, 100);
+                    <\/script>`,
                 'seite2': '<h2>Seite 2</h2><p>Noch mehr Inhalt für Seite 2...</p>',
                 'seite3': '<h2>Seite 3</h2><p>Hier könnte dein Text stehen!</p>'
             };
