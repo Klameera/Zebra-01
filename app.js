@@ -45,7 +45,7 @@ function showPage(page) {
                             <td><input type="text" id="fr3"></td>
                             <td><input type="text" id="fr4"></td>
                         </tr>
-                    </table>
+                    </table>,
                 'seite2': '<h2>Seite 2</h2><p>Noch mehr Inhalt für Seite 2...</p>',
                 'seite3': '<h2>Seite 3</h2><p>Hier könnte dein Text stehen!</p>'
             };
