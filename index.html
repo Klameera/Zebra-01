@@ -1,17 +1,37 @@
-<div class="login-page">
-    <div class="form">
-      <form class="register-form">
-        <input type="text" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
-        <button>create</button>
-        <p class="message">Already registered? <a href="#">Sign In</a></p>
-      </form>
-      <form class="login-form">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <button>login</button>
-        <p class="message">Not registered? <a href="#">Create an account</a></p>
-      </form>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestApp</title>
+    
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('seite1')">Seite 1</a>
+        <a href="#" onclick="showPage('seite2')">Seite 2</a>
+        <a href="#" onclick="showPage('seite3')">Seite 3</a>
     </div>
-  </div>
+    
+    <div class="content">
+        <div class="header">TestApp</div>
+        <div id="main-content">
+            <p>Willkommen bei der TestApp! Wähle eine Seite aus dem Menü.</p>
+        </div>
+    </div>
+    
+    <script>
+        function showPage(page) {
+            let content = {
+                'home': '<h2>Home</h2><p>Lorem ipsum dolor sit amet...</p>',
+                'seite1': '<h2>Seite 1</h2><p>Dies ist Seite 1 mit Lückenfüllertext.</p>',
+                'seite2': '<h2>Seite 2</h2><p>Noch mehr Inhalt für Seite 2...</p>',
+                'seite3': '<h2>Seite 3</h2><p>Hier könnte dein Text stehen!</p>'
+            };
+            document.getElementById('main-content').innerHTML = content[page] || '<p>Seite nicht gefunden.</p>';
+        }
+    </script>
+</body>
+</html>
