@@ -1,9 +1,97 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { display: flex; height: 100vh; background-color: rgb(158, 179, 207);}
-        
-        .sidebar { width: 200px; background: #e3e7c4; color: white; padding: 20px; }
-        .sidebar a { display: block; color: rgb(0, 0, 0); text-decoration: none; padding: 10px; margin: 5px 0; }
-        .sidebar a:hover { background: #555; }
-        
-        .content { flex-grow: 1; padding: 20px; }
-        .header { background: #2c3b82; color: white; padding: 15px; text-align: center; font-size: 1.5em; }
+/* Grundlayout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#menu {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transition: all 0.3s ease; /* Sanfter Übergang für das Menü */
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Damit der ganze Bereich des Links klickbar ist */
+    border-radius: 5px; /* Abgerundete Ecken für das Menü */
+    transition: all 0.3s ease; /* Sanfter Übergang für Hover-Effekte */
+}
+
+#menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarbe bei Hover */
+    border: 2px solid #FFEA00; /* Gelber Rahmen bei Hover */
+    color: #FFEA00; /* Textfarbe ändert sich zu gelb */
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#page-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
