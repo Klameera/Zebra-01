@@ -11,23 +11,30 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="#" onclick="showPage('home')">Home</a>
-        <a href="#" onclick="showPage('seite1')">Seite 1</a>
-        <a href="#" onclick="showPage('seite2')">Seite 2</a>
-        <a href="#" onclick="showPage('seite3')">Seite 3</a>
-    </div>
-    
-    <div class="content">
-        <div class="header">TestApp</div>
-        <div id="main-content">
-            <p>Willkommen bei der TestApp! Wähle eine Seite aus dem Menü.</p>
+    <div id="container">
+        <!-- Menü -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Home</a></li>
+                <li><a href="#" onclick="loadPage('stundenplan')">Stundenplan</a></li>
+                <li><a href="#" onclick="loadPage('speiseplan')">Speiseplan</a></li>
+                <li><a href="#" onclick="loadPage('vertretungsplan')">Vertretungsplan</a></li>
+                <li><a href="#" onclick="loadPage('einstellungen')">Einstellungen</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hauptinhalt -->
+        <div id="content">
+            <header>
+                <h1>WebApp</h1>
+                <p>Willkommen auf der WebApp!</p>
+            </header>
+            <div id="page-content">
+                <!-- Hier wird der Inhalt per JavaScript geladen -->
+            </div>
         </div>
     </div>
-    
- 
+
+    <script src="script.js"></script>
 </body>
-
-
-
 </html>
