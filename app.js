@@ -92,7 +92,7 @@ function loadPage(page) {
 <td><input type="text" placeholder=""></td>
 <td><input type="text" placeholder=""></td>
 <td><input type="text" placeholder=""></td>
-<td><input type="text" placeholder=""></td>";`
+<td><input type="text" placeholder=""></td>`
             break;
 
         case 'speiseplan':
